@@ -6,14 +6,14 @@
     <title>Ayuri Reis | Cientista de Dados & Jornalismo</title>
     <meta name="description" content="Cientista de Dados especializado em obtenção, raspagem e análise de dados públicos para investigações guiadas por evidências.">
     <meta name="author" content="Ayuri Reis">
-    <link rel="canonical" href="https://ayurireis.com.br/">
+    <link rel="canonical" href="https://ayurisreis.github.io/">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ayurireis.com.br/">
+    <meta property="og:url" content="https://ayurisreis.github.io/">
     <meta property="og:title" content="Ayuri Reis | Ciência de Dados & Jornalismo">
     <meta property="og:description" content="Investigações guiadas por dados. Portfólio de reportagens e ferramentas públicas.">
-    <meta property="og:image" content="https://ayurireis.com.br/capa-portfolio.jpg">
+    <meta property="og:image" content="https://ayurisreis.github.io/capa-portfolio.jpg">
 
     <!-- Favicon Vetorial Clean -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23111111'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-size='60' font-family='serif' font-weight='bold' fill='%23F9F8F6'>A</text></svg>">
@@ -25,7 +25,7 @@
       "@type": "Person",
       "name": "Ayuri Reis",
       "jobTitle": "Cientista de Dados",
-      "url": "https://ayurireis.com.br/",
+      "url": "https://ayurisreis.github.io/",
       "sameAs": [
         "https://www.linkedin.com/in/ayuri-reis-026317345/",
         "https://github.com/ayurireiscentraldedados"
@@ -96,9 +96,11 @@
             transition: filter 0.4s ease, transform 0.4s ease;
         }
         
+        /* Efeito de hover no PC e efeito de scroll (in-view) no mobile */
         article:hover .foto-pb,
         .group:hover .foto-pb,
-        .group\/foto:hover .foto-pb {
+        .group\/foto:hover .foto-pb,
+        .in-view .foto-pb {
             filter: grayscale(0%) contrast(1);
             transform: scale(1.01);
         }
@@ -170,7 +172,7 @@
 
     <main id="main-content">
         <section class="max-w-6xl mx-auto px-4 md:px-8 py-10 md:py-16">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center group">
                 
                 <div class="md:col-span-8 flex flex-col justify-center">
                     <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.1] mb-6 text-ink">
@@ -181,25 +183,24 @@
                         Cientista de dados especializado em obtenção, raspagem e análise de dados públicos. Desenvolvo investigações, bases próprias e ferramentas para transformar informação bruta em reportagens.
                     </p>
                     
-                    <!-- Tags de Habilidades Limpas com Fundo Branco -->
                     <div class="flex flex-wrap items-center gap-2">
                         <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">Ciência de Dados</span>
                         <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">Jornalismo de Dados</span>
+                        <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">LAI</span>
                         <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">Python</span>
                         <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">R</span>
                         <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">SQL</span>
-                        <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">ETL</span>
                         <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">Web Scraping</span>
+                        <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">ETL</span>
                         <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">Machine Learning</span>
-                        <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">HTML/CSS</span>
                         <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">DataViz</span>
-                        <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">LAI</span>
+                        <span class="bg-white border border-gray-300 text-ink px-2.5 py-1 text-xs font-mono uppercase rounded-sm shadow-sm">HTML/CSS</span>
                     </div>
                 </div>
 
                 <div class="md:col-span-4 w-full flex justify-center md:justify-end mt-6 md:mt-0">
-                    <div class="aspect-[3/4] w-full max-w-[280px] bg-gray-200 overflow-hidden relative shadow-sm border border-gray-200 group/foto">
-                        <img src="Fotos reportagens/perfil.JPG" 
+                    <div class="aspect-[3/4] w-full max-w-[280px] bg-gray-200 overflow-hidden relative shadow-sm group/foto">
+                        <img src="Fotos reportagens/perfil.jpg" 
                              alt="Retrato fotográfico de Ayuri Reis em preto e branco" 
                              class="w-full h-full object-cover foto-pb"
                              loading="eager" fetchpriority="high">
@@ -217,17 +218,17 @@
             <div class="mb-12 flex flex-col sm:flex-row items-baseline justify-between gap-4 border-b border-gray-300 pb-0" role="tablist" aria-label="Seções de trabalho">
                 <div class="flex gap-8 font-serif text-2xl font-bold">
                     <button id="btn-reportagens" role="tab" aria-selected="true" aria-controls="content-reportagens" onclick="switchTab('reportagens')" class="text-ink pb-3 border-b-2 border-accent transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent">Reportagens</button>
-                    <button id="btn-ferramentas" role="tab" aria-selected="false" aria-controls="content-ferramentas" onclick="switchTab('ferramentas')" class="text-ink-muted pb-3 border-b-2 border-transparent hover:text-accent transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent">Ferramentas</button>
+                    <button id="btn-ferramentas" role="tab" aria-selected="false" aria-controls="content-ferramentas" onclick="switchTab('ferramentas')" class="text-ink-muted pb-3 border-b-2 border-transparent hover:text-accent hover:border-accent transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-accent">Ferramentas</button>
                 </div>
                 <span class="font-mono text-xs text-ink-muted uppercase tracking-widest hidden sm:inline-block">15 Publicações</span>
             </div>
 
-            <!-- CONTEÚDO: REPORTAGENS (FORMATO DOSSIÊ HORIZONTAL) -->
+            <!-- CONTEÚDO: REPORTAGENS -->
             <div id="content-reportagens" class="tab-content active" role="tabpanel" aria-labelledby="btn-reportagens">
-                <div class="flex flex-col border-t border-gray-200">
+                <div class="flex flex-col">
                     
-                    <!-- Dossiê 1: Neymar -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 1: Neymar (2026) -->
+                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/2026/05/19/convocado-mas-distante-do-auge-numeros-de-neymar-evidenciam-declinio-no-fim-da-carreira.html" target="_blank" tabindex="-1">
@@ -236,13 +237,14 @@
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">19 de Maio de 2026</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/2026/05/19/convocado-mas-distante-do-auge-numeros-de-neymar-evidenciam-declinio-no-fim-da-carreira.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
-                                    Convocado, mas distante do auge: números de Neymar evidenciam declínio no fim da carreira
+                                    Convocado, mas distante do auge: números de Neymar evidenciam declínio
                                 </a>
                             </h3>
                             <p class="font-sans text-ink-light text-base md:text-lg mb-6 leading-relaxed">
-                                O impacto técnico e a fragilidade física de Neymar Jr. analisados em dados. Este estudo quantifica a dependência das equipes e o desempenho do craque sob alta pressão, cruzando com um histórico detalhado de suas lesões.
+                                O impacto técnico e a fragilidade física de Neymar Jr. analisados em dados. Este estudo quantifica a dependência das equipes e o desempenho do craque sob alta pressão.
                             </p>
                             <a href="https://colab.research.google.com/drive/1GpjBG8eXcK_2s1c1V-cW3BXpxB_0qgc7?usp=sharing" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
                                 <i class="ph ph-code font-bold text-sm"></i> Ver Metodologia
@@ -250,8 +252,8 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 2: Patentes -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 2: Patentes (2026) -->
+                    <article class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/avaliacao-universidades/2026/05/18/patentes-por-que-o-brasil-produz-ciencia-mas-nao-transforma-em-mercado.html" target="_blank" tabindex="-1">
@@ -260,6 +262,7 @@
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">18 de Maio de 2026</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/avaliacao-universidades/2026/05/18/patentes-por-que-o-brasil-produz-ciencia-mas-nao-transforma-em-mercado.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     Patentes: por que o Brasil produz ciência, mas não transforma em mercado?
@@ -274,16 +277,17 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 3: BETs -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 3: BETs (2026) -->
+                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/risco-bet/2026/03/15/exclusivo-torcedor-foi-exposto-a-bets-em-50-do-tempo-da-final-do-cearense.html" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/Exclusivo torcedor foi exposto a BETs em mais de 45.jpg" alt="Visão Computacional detectando placares" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/Exclusivo torcedor foi exposto a BETs em mais de 45.jpg" alt="Visão Computacional detectando placares com apostas" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">15 de Março de 2026</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/risco-bet/2026/03/15/exclusivo-torcedor-foi-exposto-a-bets-em-50-do-tempo-da-final-do-cearense.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     Exclusivo: torcedor foi exposto a BETs em 45% do tempo da final
@@ -298,16 +302,17 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 4: Ondas de Calor -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 4: Ondas de Calor (2026) -->
+                    <article class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/calor-impactos-economia-meio-ambiente/2026/01/27/ondas-de-calor-o-planeta-no-limite.html" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/Ondas de calor.jpg" alt="Mapa de calor no Brasil" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/Ondas de calor.jpg" alt="Mapa de calor georreferenciado no Brasil" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">27 de Janeiro de 2026</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/calor-impactos-economia-meio-ambiente/2026/01/27/ondas-de-calor-o-planeta-no-limite.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     Ondas de calor: o planeta no limite
@@ -322,16 +327,17 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 5: Impunidade Celulares -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 5: Impunidade Celulares (2026) -->
+                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/roubo-celulares/2026/01/22/impunidade-em-numeros-344-roubos-de-celular-para-um-indiciamento-no-ceara.html" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/impunidade em números.jpg" alt="Gráfico de inquéritos arquivados" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/impunidade em números.jpg" alt="Gráfico visual sobre impunidade e inquéritos" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">22 de Janeiro de 2026</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/roubo-celulares/2026/01/22/impunidade-em-numeros-344-roubos-de-celular-para-um-indiciamento-no-ceara.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     Impunidade em números: 344 roubos de celular para um indiciamento no Ceará
@@ -346,16 +352,17 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 6: Plano Diretor -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 6: Plano Diretor (2025) -->
+                    <article class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/plano-diretor-fortaleza/2025/12/15/inedito-o-mapa-das-110-areas-excluidas-pelos-vereadores-no-plano-diretor.html" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/inédito o mapa das 110 áreas excluídas.jpg" alt="Mapa de áreas excluídas de Fortaleza" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/inédito o mapa das 110 áreas excluídas.jpg" alt="Mapas de áreas excluídas de Fortaleza" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">15 de Dezembro de 2025</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/plano-diretor-fortaleza/2025/12/15/inedito-o-mapa-das-110-areas-excluidas-pelos-vereadores-no-plano-diretor.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     Inédito: o mapa das 110 áreas excluídas pelos vereadores no Plano Diretor
@@ -370,16 +377,17 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 7: Abuso Jovens -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 7: Abuso Jovens (2025) -->
+                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/infancia-violencia-sexual/2025/09/29/o-que-esta-por-tras-dos-571-jovens-que-abusam-sexualmente-de-criancas-e-adolescentes-no-ceara.html" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/O que está por trás dos jovens que abusam.jpg" alt="Dados de violência sexual" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/O que está por trás dos jovens que abusam.jpg" alt="Gráficos sobre agressores e vítimas" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">29 de Setembro de 2025</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/infancia-violencia-sexual/2025/09/29/o-que-esta-por-tras-dos-571-jovens-que-abusam-sexualmente-de-criancas-e-adolescentes-no-ceara.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     O que está por trás dos jovens que abusam sexualmente de crianças no Ceará
@@ -394,16 +402,17 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 8: Estado Não Sabe -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 8: Estado Não Sabe (2025) -->
+                    <article class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/2025/09/08/estado-do-ceara-nao-sabe-ou-nao-registra-quem-abusa-sexualmente-de-criancas.html" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/Estado não sabe quem abusa sexualmente.jpg" alt="Apagão de dados sobre agressores" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/Estado não sabe quem abusa sexualmente.jpg" alt="Gráficos sobre lacunas de registros públicos" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">08 de Setembro de 2025</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/2025/09/08/estado-do-ceara-nao-sabe-ou-nao-registra-quem-abusa-sexualmente-de-criancas.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     O Ceará não sabe ou não registra quem abusa sexualmente de crianças
@@ -418,8 +427,8 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 9: Stalking -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 9: Stalking (2025) -->
+                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/stalking-perseguicao-crime-stalker/2025/08/19/perseguicao-obsessiva-mais-de-7-mil-mulheres-foram-vitimas-no-ceara.html" target="_blank" tabindex="-1">
@@ -428,6 +437,7 @@
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">19 de Agosto de 2025</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/stalking-perseguicao-crime-stalker/2025/08/19/perseguicao-obsessiva-mais-de-7-mil-mulheres-foram-vitimas-no-ceara.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     Perseguição obsessiva: mais de 7 mil mulheres foram vítimas no Ceará
@@ -442,16 +452,17 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 10: Transplantes -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 10: Transplantes (2025) -->
+                    <article class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/transplantes-orgaos/2025/08/09/vida-que-renova-desafios-e-esperanca-no-sistema-brasileiro-de-transplantes.html" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/Desafios no sistema brasileiro de transplante.jpg" alt="Estatísticas de transplante de órgãos" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/Desafios no sistema brasileiro de transplante.jpg" alt="Estatísticas e gráficos de transplante de órgãos" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">09 de Agosto de 2025</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/transplantes-orgaos/2025/08/09/vida-que-renova-desafios-e-esperanca-no-sistema-brasileiro-de-transplantes.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     Vida que renova: Desafios e esperança no sistema brasileiro de transplantes
@@ -466,16 +477,17 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 11: ENEM -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 11: ENEM (2025) -->
+                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/2025/08/02/enem-2024-rede-estadual-do-ceara-e-a-10-do-pais-privada-e-federal-tem-maiores-medias.html" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/Enem 2024.jpg" alt="Dados educacionais e médias do ENEM" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/Enem 2024.jpg" alt="Gráficos de dados educacionais e médias do ENEM" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">02 de Agosto de 2025</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/2025/08/02/enem-2024-rede-estadual-do-ceara-e-a-10-do-pais-privada-e-federal-tem-maiores-medias.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     Enem 2024: Análise por UF e dependência acadêmica no Brasil
@@ -490,8 +502,8 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 12: Lei Magnitsky -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 12: Lei Magnitsky (2025) -->
+                    <article class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/2025/07/31/de-assassinos-a-corruptos-a-lista-da-lei-magnitsky-aplicada-contra-alexandre-de-moraes-por-trump.html" target="_blank" tabindex="-1">
@@ -500,6 +512,7 @@
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">31 de Julho de 2025</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/2025/07/31/de-assassinos-a-corruptos-a-lista-da-lei-magnitsky-aplicada-contra-alexandre-de-moraes-por-trump.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     De assassinos a corruptos: o peso da lista da Lei Magnitsky
@@ -514,8 +527,8 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 13: Suicídio Policiais -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <!-- Dossiê 13: Suicídio Policiais (2025) -->
+                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/policiais-seguranca-publica/2025/06/16/suicidio-de-policiais-o-veu-de-mortes-que-recai-sobre-agentes-de-seguranca.html" target="_blank" tabindex="-1">
@@ -524,6 +537,7 @@
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">16 de Junho de 2025</div>
                             <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/policiais-seguranca-publica/2025/06/16/suicidio-de-policiais-o-veu-de-mortes-que-recai-sobre-agentes-de-seguranca.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
                                     Suicídio de policiais: o véu de mortes que recai sobre batalhões
@@ -538,45 +552,23 @@
                         </div>
                     </article>
 
-                    <!-- Dossiê 14: Invasões no Cocó -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
-                        <div class="w-full md:w-5/12 shrink-0">
-                            <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
-                                <a href="https://mais.opovo.com.br/reportagens-especiais/rio-coco-parque-do-coco-tensoes/2025/05/26/viviamos-no-esgoto-invasoes-no-parque-do-coco-expoem-problemas-de-habitacao-em-fortaleza.html" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/invasões e limites no cocó.jpg" alt="Mapa geográfico do Rio Cocó" loading="lazy" class="w-full h-full object-cover foto-pb">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-7/12 flex flex-col items-start">
-                            <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
-                                <a href="https://mais.opovo.com.br/reportagens-especiais/rio-coco-parque-do-coco-tensoes/2025/05/26/viviamos-no-esgoto-invasoes-no-parque-do-coco-expoem-problemas-de-habitacao-em-fortaleza.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
-                                    Limites do Cocó: Invasões expõem problemas de habitação em Fortaleza
-                                </a>
-                            </h3>
-                            <p class="font-sans text-ink-light text-base md:text-lg mb-6 leading-relaxed">
-                                Análise geoespacial avançada manipulando shapefiles governamentais para identificar sobreposições de áreas urbanas nas zonas protegidas.
-                            </p>
-                            <a href="https://colab.research.google.com/drive/1MZ7OKnO2IqbrFp4hQGqfZeLDdFMRU-Wb?usp=sharing" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
-                                <i class="ph ph-code font-bold text-sm"></i> Ver Metodologia
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- Dossiê 15: O DESTAQUE PREMIADO -->
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 group items-center">
+                    <!-- Dossiê 14: O DESTAQUE PREMIADO (2025) -->
+                    <article class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors relative">
                         <div class="w-full md:w-5/12 shrink-0 relative">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200 relative">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/policiais-seguranca-publica/2025/06/09/letais-violentos-e-intencionais-os-crimes-contra-policiais-no-ceara.html" target="_blank" tabindex="-1">
                                     <img src="Fotos reportagens/Letais e intencionais.jpg" alt="Mapa de letalidade policial no Ceará" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
-                                <!-- Selo de Medalha Fixo -->
+                                <!-- Selo de Medalha Fixo na Foto -->
                                 <div class="absolute top-0 right-0 bg-accent text-paper px-3 py-1.5 font-mono text-xs font-bold uppercase shadow-sm flex items-center gap-1 border-b border-l border-accent z-10 pointer-events-none">
                                     <i class="ph ph-medal text-lg"></i> Premiada
                                 </div>
                             </div>
                         </div>
                         <div class="w-full md:w-7/12 flex flex-col items-start">
-                            <!-- A Etiqueta do Prêmio em cima do título -->
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">09 de Junho de 2025</div>
+                            
+                            <!-- A Etiqueta do Prêmio Acima do Título -->
                             <div class="inline-flex items-center gap-1.5 bg-ink text-paper px-3 py-1.5 mb-4 text-[10px] md:text-xs font-mono font-bold uppercase tracking-wider shadow-sm rounded-sm">
                                 <i class="ph ph-star-fill text-yellow-300 text-sm"></i> Prêmio Cláudio Weber Abramo 2025
                             </div>
@@ -595,18 +587,43 @@
                         </div>
                     </article>
 
+                    <!-- Dossiê 15: Invasões no Cocó (2025) -->
+                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 group items-center transition-colors">
+                        <div class="w-full md:w-5/12 shrink-0">
+                            <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
+                                <a href="https://mais.opovo.com.br/reportagens-especiais/rio-coco-parque-do-coco-tensoes/2025/05/26/viviamos-no-esgoto-invasoes-no-parque-do-coco-expoem-problemas-de-habitacao-em-fortaleza.html" target="_blank" tabindex="-1">
+                                    <img src="Fotos reportagens/invasões e limites no cocó.jpg" alt="Mapa geográfico urbano e ambiental do Rio Cocó" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-7/12 flex flex-col items-start">
+                            <div class="font-mono text-xs text-ink-muted uppercase tracking-widest mb-3">26 de Maio de 2025</div>
+                            <h3 class="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
+                                <a href="https://mais.opovo.com.br/reportagens-especiais/rio-coco-parque-do-coco-tensoes/2025/05/26/viviamos-no-esgoto-invasoes-no-parque-do-coco-expoem-problemas-de-habitacao-em-fortaleza.html" target="_blank" class="text-ink group-hover:text-accent transition-colors focus:outline-none">
+                                    Limites do Cocó: Invasões expõem problemas de habitação em Fortaleza
+                                </a>
+                            </h3>
+                            <p class="font-sans text-ink-light text-base md:text-lg mb-6 leading-relaxed">
+                                Análise geoespacial avançada manipulando shapefiles governamentais para identificar sobreposições de áreas urbanas nas zonas protegidas.
+                            </p>
+                            <a href="https://colab.research.google.com/drive/1MZ7OKnO2IqbrFp4hQGqfZeLDdFMRU-Wb?usp=sharing" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
+                                <i class="ph ph-code font-bold text-sm"></i> Ver Metodologia
+                            </a>
+                        </div>
+                    </article>
+
                 </div>
             </div>
 
-            <!-- CONTEÚDO: FERRAMENTAS (TAMBÉM NO FORMATO DOSSIÊ) -->
+            <!-- CONTEÚDO: FERRAMENTAS -->
             <div id="content-ferramentas" class="tab-content" role="tabpanel" aria-labelledby="btn-ferramentas">
-                <div class="flex flex-col border-t border-gray-200">
+                <div class="flex flex-col">
                     
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
+                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/interativos/agregador/agregador-pesquisas-2026.php" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/agregador de pesquisas.jpg" alt="Interface do Agregador de Pesquisas Eleitorais" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/agregador de pesquisas.jpg" alt="Interface interativa do Agregador de Pesquisas Eleitorais" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
@@ -619,17 +636,26 @@
                             <p class="font-sans text-ink-light text-base md:text-lg mb-6 leading-relaxed">
                                 Desenvolvimento de pipeline de conferência estatística. A ferramenta compila e padroniza levantamentos de diversos institutos, aplicando cálculos de médias móveis para filtrar ruídos metodológicos em tempo real.
                             </p>
-                            <a href="https://mais.opovo.com.br/reportagens-especiais/eleicoes-agregador-pesquisa-opovo-2026/2026/05/13/ciencia-de-dados-medias-moveis-e-eleicoes-como-funciona-o-agregador-o-povo.html" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
-                                <i class="ph ph-code font-bold text-sm"></i> Ver Metodologia
-                            </a>
+                            
+                            <div class="flex flex-wrap gap-3 items-center">
+                                <a href="https://mais.opovo.com.br/interativos/agregador/agregador-pesquisas-2026.php" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
+                                    <i class="ph ph-arrow-square-out font-bold text-sm"></i> Acessar Ferramenta
+                                </a>
+                                <a href="https://mais.opovo.com.br/reportagens-especiais/eleicoes-agregador-pesquisa-opovo-2026/2026/05/13/ciencia-de-dados-medias-moveis-e-eleicoes-como-funciona-o-agregador-o-povo.html" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
+                                    <i class="ph ph-article font-bold text-sm"></i> Ler Reportagem
+                                </a>
+                                <span class="inline-flex items-center gap-1.5 text-[10px] md:text-xs font-mono font-bold uppercase tracking-wider text-ink-muted">
+                                    <i class="ph ph-lock-key text-sm"></i> Código Interno
+                                </span>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 group items-center">
+                    <article class="flex flex-col md:flex-row-reverse gap-6 md:gap-10 py-12 group items-center transition-colors">
                         <div class="w-full md:w-5/12 shrink-0">
                             <div class="aspect-video w-full border border-gray-200 overflow-hidden bg-gray-200">
                                 <a href="https://mais.opovo.com.br/reportagens-especiais/preco-comparado-nordeste" target="_blank" tabindex="-1">
-                                    <img src="Fotos reportagens/Preço comparado NE.jpg" alt="Painel de dados da Cesta Básica do Nordeste" loading="lazy" class="w-full h-full object-cover foto-pb">
+                                    <img src="Fotos reportagens/Preço comparado NE.jpg" alt="Painel de dados do comparador de preços da Cesta Básica do Nordeste" loading="lazy" class="w-full h-full object-cover foto-pb">
                                 </a>
                             </div>
                         </div>
@@ -642,9 +668,15 @@
                             <p class="font-sans text-ink-light text-base md:text-lg mb-6 leading-relaxed">
                                 Criação e gestão integral da pipeline de dados para monitoramento do custo de vida. O fluxo ponta-a-ponta de extração, tratamento e cálculo alimenta uma série contínua de reportagens para toda a região.
                             </p>
-                            <a href="https://mais.opovo.com.br/reportagens-especiais/preco-comparado-nordeste" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
-                                <i class="ph ph-code font-bold text-sm"></i> Ver Reportagens
-                            </a>
+                            
+                            <div class="flex flex-wrap gap-3 items-center">
+                                <a href="https://mais.opovo.com.br/reportagens-especiais/preco-comparado-nordeste" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
+                                    <i class="ph ph-files font-bold text-sm"></i> Série de Reportagens
+                                </a>
+                                <a href="https://www.figma.com/board/lrhPiEbPjtP7XC4oh9YkeG/Pre%C3%A7o-comparado-NE?node-id=0-1&p=f&t=UhpMwaYY9Pnvuroo-0" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
+                                    <i class="ph ph-figma-logo font-bold text-sm"></i> Ver Arquitetura
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -715,7 +747,7 @@
                     </div>
 
                     <div class="aspect-[3/4] w-full border border-gray-200 bg-paper overflow-hidden relative group/foto">
-                        <img src="Fotos reportagens/equipe.JPG" alt="Equipe O POVO recebendo o troféu" loading="lazy" class="w-full h-full object-cover object-center foto-pb">
+                        <img src="Fotos reportagens/equipe.jpg" alt="Equipe O POVO recebendo o troféu" loading="lazy" class="w-full h-full object-cover object-center foto-pb">
                         <div class="absolute top-0 right-0 bg-paper border-b border-l border-gray-200 px-2 py-1 font-mono text-[10px] text-ink-light z-10" aria-hidden="true">
                             Equipe OP+
                         </div>
@@ -875,10 +907,12 @@
             }
         });
 
+        // Eventos e Observers carregados após o documento estar pronto
         document.addEventListener('DOMContentLoaded', () => {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-link');
 
+            // ScrollSpy para a navegação do Header
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -893,9 +927,28 @@
                         });
                     }
                 });
-            }, { rootMargin: "-20% 0px -80% 0px" });
+            }, { rootMargin: "-20% 0px -40% 0px" });
 
             sections.forEach(section => observer.observe(section));
+
+            // NOVO: Observer para acender as fotos durante o Scroll (Efeito Scanner no celular)
+            const photoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    } else {
+                        entry.target.classList.remove('in-view');
+                    }
+                });
+            }, { 
+                // A foto acende quando cruza 35% do topo e apaga quando passa de 35% do fundo
+                rootMargin: "-35% 0px -35% 0px" 
+            });
+
+            // Aplica o "olheiro" em todas as reportagens, ferramentas, fotos da galeria e hero
+            document.querySelectorAll('article, .group, .group\\/foto').forEach(el => {
+                photoObserver.observe(el);
+            });
         });
     </script>
 </body>
