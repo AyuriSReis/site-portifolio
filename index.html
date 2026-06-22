@@ -170,7 +170,7 @@
 
     <main id="main-content">
         <section class="max-w-6xl mx-auto px-4 md:px-8 py-10 md:py-16">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center group">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
                 
                 <div class="md:col-span-8 flex flex-col justify-center">
                     <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.1] mb-6 text-ink">
@@ -198,8 +198,8 @@
                 </div>
 
                 <div class="md:col-span-4 w-full flex justify-center md:justify-end mt-6 md:mt-0">
-                    <div class="aspect-[3/4] w-full max-w-[280px] bg-gray-200 overflow-hidden relative group shadow-sm border border-gray-200">
-                        <img src="Fotos reportagens/_mg_6328.jpg" 
+                    <div class="aspect-[3/4] w-full max-w-[280px] bg-gray-200 overflow-hidden relative shadow-sm border border-gray-200 group/foto">
+                        <img src="Fotos reportagens/_MG_6328.JPG" 
                              alt="Retrato fotográfico de Ayuri Reis em preto e branco" 
                              class="w-full h-full object-cover foto-pb"
                              loading="eager" fetchpriority="high">
@@ -224,7 +224,7 @@
 
             <!-- CONTEÚDO: REPORTAGENS (FORMATO DOSSIÊ HORIZONTAL) -->
             <div id="content-reportagens" class="tab-content active" role="tabpanel" aria-labelledby="btn-reportagens">
-                <div class="flex flex-col">
+                <div class="flex flex-col border-t border-gray-200">
                     
                     <!-- Dossiê 1: Neymar -->
                     <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
@@ -600,7 +600,7 @@
 
             <!-- CONTEÚDO: FERRAMENTAS (TAMBÉM NO FORMATO DOSSIÊ) -->
             <div id="content-ferramentas" class="tab-content" role="tabpanel" aria-labelledby="btn-ferramentas">
-                <div class="flex flex-col">
+                <div class="flex flex-col border-t border-gray-200">
                     
                     <article class="flex flex-col md:flex-row gap-6 md:gap-10 py-12 border-b border-gray-200 group items-center">
                         <div class="w-full md:w-5/12 shrink-0">
@@ -619,17 +619,9 @@
                             <p class="font-sans text-ink-light text-base md:text-lg mb-6 leading-relaxed">
                                 Desenvolvimento de pipeline de conferência estatística. A ferramenta compila e padroniza levantamentos de diversos institutos, aplicando cálculos de médias móveis para filtrar ruídos metodológicos em tempo real.
                             </p>
-                            <div class="flex flex-wrap items-center gap-3">
-                                <a href="https://mais.opovo.com.br/interativos/agregador/agregador-pesquisas-2026.php" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
-                                    <i class="ph ph-app-window font-bold text-sm"></i> Acessar Ferramenta
-                                </a>
-                                <a href="https://mais.opovo.com.br/reportagens-especiais/eleicoes-agregador-pesquisa-opovo-2026/2026/05/13/ciencia-de-dados-medias-moveis-e-eleicoes-como-funciona-o-agregador-o-povo.html" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
-                                    <i class="ph ph-article font-bold text-sm"></i> Ler Reportagem
-                                </a>
-                                <span class="inline-flex items-center gap-2 px-3 py-2 text-xs font-mono uppercase tracking-wider text-ink-muted bg-gray-100 border border-transparent rounded-sm">
-                                    <i class="ph ph-lock font-bold text-sm"></i> Código Interno
-                                </span>
-                            </div>
+                            <a href="https://mais.opovo.com.br/reportagens-especiais/eleicoes-agregador-pesquisa-opovo-2026/2026/05/13/ciencia-de-dados-medias-moveis-e-eleicoes-como-funciona-o-agregador-o-povo.html" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
+                                <i class="ph ph-code font-bold text-sm"></i> Ver Metodologia
+                            </a>
                         </div>
                     </article>
 
@@ -650,14 +642,9 @@
                             <p class="font-sans text-ink-light text-base md:text-lg mb-6 leading-relaxed">
                                 Criação e gestão integral da pipeline de dados para monitoramento do custo de vida. O fluxo ponta-a-ponta de extração, tratamento e cálculo alimenta uma série contínua de reportagens para toda a região.
                             </p>
-                            <div class="flex flex-wrap items-center gap-3">
-                                <a href="https://mais.opovo.com.br/reportagens-especiais/preco-comparado-nordeste" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
-                                    <i class="ph ph-article font-bold text-sm"></i> Série de Reportagens
-                                </a>
-                                <a href="https://www.figma.com/board/lrhPiEbPjtP7XC4oh9YkeG/Pre%C3%A7o-comparado-NE?node-id=0-1&p=f&t=UhpMwaYY9Pnvuroo-0" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
-                                    <i class="ph ph-figma-logo font-bold text-sm"></i> Ver Arquitetura
-                                </a>
-                            </div>
+                            <a href="https://mais.opovo.com.br/reportagens-especiais/preco-comparado-nordeste" target="_blank" class="inline-flex items-center gap-2 border border-gray-300 px-4 py-2 text-xs font-mono uppercase tracking-wider text-ink hover:border-accent hover:text-accent transition-colors rounded-sm shadow-sm bg-white">
+                                <i class="ph ph-code font-bold text-sm"></i> Ver Reportagens
+                            </a>
                         </div>
                     </article>
 
@@ -728,7 +715,7 @@
                     </div>
 
                     <div class="aspect-[3/4] w-full border border-gray-200 bg-paper overflow-hidden relative group/foto">
-                        <img src="Fotos reportagens/_MG_6317.jpg" alt="Equipe O POVO recebendo o troféu" loading="lazy" class="w-full h-full object-cover object-center foto-pb">
+                        <img src="Fotos reportagens/_MG_6317.JPG" alt="Equipe O POVO recebendo o troféu" loading="lazy" class="w-full h-full object-cover object-center foto-pb">
                         <div class="absolute top-0 right-0 bg-paper border-b border-l border-gray-200 px-2 py-1 font-mono text-[10px] text-ink-light z-10" aria-hidden="true">
                             Equipe OP+
                         </div>
@@ -906,24 +893,9 @@
                         });
                     }
                 });
-            }, { rootMargin: "-10% 0px -40% 0px" });
+            }, { rootMargin: "-20% 0px -80% 0px" });
 
             sections.forEach(section => observer.observe(section));
-
-            // Garantir que a aba "Contato" seja ativada no fim da página
-            window.addEventListener('scroll', () => {
-                if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight - 50) {
-                    navLinks.forEach(link => {
-                        link.classList.remove('border-accent', 'text-ink');
-                        link.classList.add('border-transparent');
-                    });
-                    const contatoLink = document.querySelector('a[href="#contato"]');
-                    if (contatoLink) {
-                        contatoLink.classList.add('border-accent', 'text-ink');
-                        contatoLink.classList.remove('border-transparent');
-                    }
-                }
-            });
         });
     </script>
 </body>
